@@ -3,6 +3,7 @@ let voices = [];
 let voiceSelect = document.querySelector('select')
 
 document.querySelector("#start").addEventListener("click", () => {
+  speech.rate = 0.7;
   speech.text = document.querySelector("#text").value;
   window.speechSynthesis.speak(speech);
 });
